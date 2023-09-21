@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionaire</title>
+</head>
+<body>
+    <form action="/" method="POST">
+     <label for="fname">FirstName:</label>
+     <input type="text" name="fname" id="fname" placeholder="Enter first name"> <br>
+
+     <label for="lname">LastName:</label>
+     <input type="text" name="lname" id="lname" placeholder="Enter last name">
+
+     <fieldset>
+     <legend>Select your gender</legend>
+     <input type="radio" name="gender" id="gender_male" value="MALE"><label for="gender_male">Male</label>
+     <br>
+     <input type="radio" name="gender" id="gender_female" value="FEMALE"><label for="gender_female">Female</label>
+     <br>
+     <input type="radio" name="gender" id="gender_other" value="OTHER"><label for="gender_other">Other</label>
+     <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Which programming languages do you know</legend>
+        <input type="checkbox" name="lang" id="lang_java" value="JAVA"><label for="lang_java">Java</label>
+        <br>
+        <input type="checkbox" name="lang" id="lang_c#" value="C#"><label for="lang_c#">C#</label>
+        <br>
+        <input type="checkbox" name="lang" id="lang_python" value="PYTHON"><label for="lang_python">Python</label>
+        <br>
+    </fieldset>
+    <button type="submit" value="SUBSEND">SUBMIT</button>
+    </form>
+</body>
+</html>
