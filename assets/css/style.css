@@ -1,24 +1,403 @@
-body{
-    background-color:lightskyblue;
+body {
+  background-color: #252628 !important;
+  overflow-x: hidden;
 }
 
-hr{
-    width: 90%;
-    height: 3px;
-    background-color: red;
-    border-color: red;
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-
-h3{
-    color: brown;
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
 }
 
-.title1{
-    color: yellowgreen;
+header .header-content .header-content-texts * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-ol li{
-    list-style-type: lower-alpha;
-    
+header .header-content .header-content-texts h1 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 25px;
 }
+
+header .header-content .header-content-texts p {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+header .header-content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+header .header-content nav a {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
+}
+
+header .header-content nav a:hover {
+  font-size: 15px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+main .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .about-me .about-me-texts {
+  width: 40%;
+}
+
+main .about-me .about-me-texts * {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+}
+
+main .about-me img {
+  max-width: 300px;
+  opacity: 75%;
+  border-radius: 15px;
+}
+
+main .my-experience {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 20px;
+}
+
+main .my-experience h1 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+main .my-experience .swiper-container {
+  width: 100% !important;
+  position: relative;
+}
+
+main .my-experience .swiper-container .swiper-button-prev,
+main .my-experience .swiper-container .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+}
+
+main .my-experience .swiper-container .swiper-button-prev {
+  left: -45px;
+  color: gainsboro;
+}
+
+main .my-experience .swiper-container .swiper-button-next {
+  right: -45px;
+  color: gainsboro;
+}
+
+main .my-experience .swiper-container .swiper-wrapper {
+  width: calc((50% + 20px) * 2);
+}
+
+main .my-experience .swiper-container .swiper-wrapper .card {
+  width: calc(50% - 40px) !important;
+  height: 200px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+main .my-experience .swiper-container .swiper-wrapper .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+main .my-experience .swiper-container .swiper-wrapper .card .card-content {
+  position: relative;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 10px;
+}
+
+main .my-experience .swiper-container .swiper-wrapper .card .card-content h1, main .my-experience .swiper-container .swiper-wrapper .card .card-content p {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: #252628;
+}
+
+main .my-experience .swiper-container .swiper-wrapper .card .card-content img {
+  max-width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+main .my-contacts {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .my-contacts h1 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+main .my-contacts ul {
+  list-style: none;
+}
+
+main .my-contacts ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .my-contacts ul * {
+  color: white;
+}
+
+main .my-contacts ul a {
+  text-decoration: none;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #252628;
+  margin-top: 100px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+footer .footer-content .footer-content-texts * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+footer .footer-content .footer-content-texts h1 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+footer .footer-content .footer-content-texts p {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+footer .footer-content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content nav a {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
+}
+
+footer .footer-content nav a:hover {
+  font-size: 15px;
+}
+
+footer .footer-content ul {
+  list-style: none;
+}
+
+footer .footer-content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content ul * {
+  color: white;
+}
+
+footer .footer-content ul i {
+  font-size: 10px;
+}
+
+footer .footer-content ul a {
+  text-decoration: none;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Sono', sans-serif;
+  margin-left: 10px;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */
